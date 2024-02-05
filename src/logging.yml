@@ -3,9 +3,7 @@ disable_existing_loggers: false
 
 formatters:
   default:
-    use_colors: true
     format: "%(asctime)s.%(msecs)03d %(levelname)s %(module)s:%(lineno)d %(message)s"
-    datefmt: "%Y%m%d %H:%M:%S"
 
 handlers:
   console:
@@ -19,6 +17,6 @@ loggers:
       propagate: true
 
 root:
-  level: INFO
+  level: DEBUG
   handlers: [console]
   propagate: false

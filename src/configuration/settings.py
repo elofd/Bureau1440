@@ -18,7 +18,7 @@ class AppConfig(BaseSettings):
     Класс с настройками приложения.
     """
     host: str = Field(help='Хост, на котором будет работать приложение')
-    port: str = Field(help='Порт, на котором будет работать приложение')
+    port: int = Field(help='Порт, на котором будет работать приложение')
     debug: bool = Field(help='Режим отладки приложения', default=False)
     enable_swagger: bool = Field(
         help='Включение/отключение swagger документации', default=False
